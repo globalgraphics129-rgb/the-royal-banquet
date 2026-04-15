@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Royal Banquet | Grace Empire by Golden Spoon</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    
+    <style>
+        /* Global Styles & Brand Colors */
+        :root {
+            --brand-blue: #001647;
+            --brand-gold: #D4AF37;
+            --text-dark: #333333;
+            --bg-light: #F5F7FA;
+            --white: #FFFFFF;
+            --border-color: #E2E8F0;
+        }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: var(--brand-blue); /* Deep cinematic blue background */
+            color: var(--text-dark);
+            margin: 0;
+            padding: 40px 20px;
+        }
+
+        /* Main Container - Matches Fatsoma structure */
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            background: var(--bg-light);
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 20px 40px rgba(0,0,0,0.4);
+        }
+
+        /* Hero Image Section */
+        .hero-banner {
+            width: 100%;
+            height: 400px;
+            background-color: #111;
+            /* Replace with your actual Royal Banquet flyer URL when you upload it to GitHub */
+            background-image: url('YOUR_FLYER_IMAGE_URL_HERE.jpg'); 
+            background-size: cover;
+            background-position: center;
+        }
+
+        /* Section Cards */
+        .section-card {
+            background: var(--white);
+            margin: 20px;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+        }
+
+        h1, h2, h3 {
+            margin-top: 0;
+            color: var(--brand-blue);
+        }
+
+        h1 {
+            font-size: 28px;
+            font-weight: 700;
+            text-transform: uppercase;
+        }
+
+        /* Event Details Grid */
+        .event-details {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 15px;
+            margin-bottom: 20px;
+            font-size: 14px;
+            color: #555;
+        }
+
+        /* Organizer Snippet */
+        .organizer {
+            display: flex;
+            align-items: center;
+            padding-top: 20px;
+            border-top: 1px solid var(--border-color);
+        }
+
+        .organizer-logo {
+            width: 40px;
+            height: 40px;
+            background: var(--brand-gold);
+            border-radius: 50%;
+            margin-right: 15px;
+        }
+
+        /* Tickets / Packages Section */
+        .ticket-row {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 0;
+            border-bottom: 1px solid var(--border-color);
+        }
+
+        .ticket-row:last-child {
+            border-bottom: none;
+        }
+
+        .ticket-info h3 {
+            margin: 0 0 5px 0;
+            font-size: 16px;
+        }
+
+        .ticket-info p {
+            margin: 0;
+            font-size: 12px;
+            color: #777;
+        }
+
+        .ticket-action {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+        }
+
+        .price {
+            font-weight: 600;
+            font-size: 16px;
+        }
+
+        select {
+            padding: 8px;
+            border: 1px solid var(--border-color);
+            border-radius: 4px;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        /* Primary Button */
+        .btn-primary {
+            background-color: var(--brand-gold);
+            color: var(--brand-blue);
+            border: none;
+            padding: 12px 24px;
+            font-weight: 700;
+            font-family: 'Poppins', sans-serif;
+            border-radius: 6px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            display: block;
+            width: 100%;
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        .btn-primary:hover {
+            background-color: #bfa02e;
+            transform: translateY(-2px);
+        }
+
+        /* Text Content */
+        .description-text {
+            line-height: 1.6;
+            color: #444;
+            font-size: 14px;
+        }
+
+        .lineup-list {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            line-height: 2;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <div class="hero-banner"></div>
+
+        <div class="section-card">
+            <h1>The Royal Banquet - Summer Party 001</h1>
+            
+            <div class="event-details">
+                <div>📅 05th Sept. 2026</div>
+                <div>📍 Word of Life Church, Darlington Durham</div>
+                <div>🎟️ Packages Available</div>
+                <div>🎵 Music by DJ Latcom</div>
+            </div>
+
+            <div class="organizer">
+                <div class="organizer-logo"></div>
+                <div>
+                    <strong>Grace Empire by Golden Spoon</strong><br>
+                    <small>Premium Catering & Events</small>
+                </div>
+            </div>
+        </div>
+
+        <div class="section-card">
+            <h2>Packages & Tickets</h2>
+            
+            <div class="ticket-row">
+                <div class="ticket-info">
+                    <h3>⚡ DELUXE 1 PACKAGE</h3>
+                    <p>Includes Fried Rice, Jollof Rice, Meat Pie, Chicken Pie...</p>
+                </div>
+                <div class="ticket-action">
+                    <span class="price">£35.00</span>
+                    <select>
+                        <option>0</option>
+                        <option>1</option>
+                        <option>2</option>
+                        <option>3</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="ticket-row">
+                <div class="ticket-info">
+                    <h3>🔥 DELUXE 2 PACKAGE</h3>
+                    <p>Includes extras: Veg Salad, Zobo drink, Pepper Turkey...</p>
+                </div>
+                <div class="ticket-action">
+                    <span class="price">£50.00</span>
+                    <select>
+                        <option>0</option>
+                        <option>1</option>
+                        <option>2</option>
+                        <option>3</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="ticket-row">
+                <div class="ticket-info">
+                    <h3>👑 THE COMPLETENESS</h3>
+                    <p>The ultimate spread for premium guests.</p>
+                </div>
+                <div class="ticket-action">
+                    <span class="price">£100.00</span>
+                    <select>
+                        <option>0</option>
+                        <option>1</option>
+                        <option>2</option>
+                        <option>3</option>
+                    </select>
+                </div>
+            </div>
+
+            <button class="btn-primary">Reserve Packages / Order Now</button>
+        </div>
+
+        <div class="section-card">
+            <h2>About The Event</h2>
+            <div class="description-text">
+                <p>Grace Empire presents "The Royal Banquet" - an electrifying lifestyle and dining experience designed to bring people together for an unforgettable celebration of food, culture, and vibrant social connection.</p>
+                <p>Guests can expect an exciting atmosphere featuring premium catering from Golden Spoon, dynamic entertainment, and a perfect environment to relax, connect, and celebrate.</p>
+                <p><strong>For Sponsorship & Direct Orders Call: 074-9310-1936</strong></p>
+            </div>
+        </div>
+
+    </div>
+
+</body>
+</html>
